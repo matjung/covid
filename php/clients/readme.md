@@ -1,5 +1,12 @@
 This folder contains sample php clients to work with api.github.com
 
+[Mark Down Cheat Sheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
+
+[Usage Documentation at phpclasses.org](https://www.phpclasses.org/package/11581-PHP-Get-responses-to-requests-to-the-Github-API.html)
+
+* php/clients/githubclient.php
+* php/clients/githubclient_current_user.php.php
+
 <?php
 $loc_class_path="../classes";
 set_include_path(get_include_path() . PATH_SEPARATOR . $loc_class_path);
