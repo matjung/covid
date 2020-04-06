@@ -1,0 +1,343 @@
+
+
+
+curl "https://services7.arcgis.com/mOBPykOjAyBO2ZKk/arcgis/rest/services/RKI_COVID19/FeatureServer/0/query?f=json&where=Meldedatum%3Etimestamp%20%272020-03-01%2022%3A59%3A59%27%20AND%20NeuerFall%20IN(0%2C%201)&returnGeometry=false&spatialRel=esriSpatialRelIntersects&outFields=ObjectId%2CAnzahlFall%2CMeldedatum%2CNeuerFall&orderByFields=Meldedatum%20asc&resultOffset=30000&resultRecordCount=2000&cacheHint=true"
+
+
+curl "https://services7.arcgis.com/mOBPykOjAyBO2ZKk/arcgis/rest/services/RKI_COVID19/FeatureServer?f=pjson"
+
+
+curl "https://services7.arcgis.com/mOBPykOjAyBO2ZKk/arcgis/rest/services/RKI_COVID19/FeatureServer/0?f=pjson"
+{
+  "currentVersion" : 10.7,
+  "id" : 0,
+  "name" : "RKI_COVID19",
+  "type" : "Table",
+  "serviceItemId" : "dd4580c810204019a7b8eb3e0b329dd6",
+  "sourceSchemaChangesAllowed" : true,
+  "hasViews" : true,
+  "displayField" : "",
+  "description" : "",
+  "copyrightText" : "",
+  "defaultVisibility" : true,
+  "editingInfo" : {
+    "lastEditDate" : 1586135014150
+  },
+  "relationships" : [],
+  "isDataVersioned" : false,
+  "supportsAppend" : true,
+  "supportsCalculate" : true,
+  "supportsASyncCalculate" : true,
+  "supportsTruncate" : true,
+  "supportsAttachmentsByUploadId" : true,
+  "supportsAttachmentsResizing" : true,
+  "supportsRollbackOnFailureParameter" : true,
+  "supportsStatistics" : true,
+  "supportsExceedsLimitStatistics" : true,
+  "supportsAdvancedQueries" : true,
+  "supportsValidateSql" : true,
+  "supportsCoordinatesQuantization" : true,
+  "supportsFieldDescriptionProperty" : true,
+  "supportsQuantizationEditMode" : true,
+  "supportsApplyEditsWithGlobalIds" : false,
+  "advancedQueryCapabilities" : {
+    "supportsPagination" : true,
+    "supportsPaginationOnAggregatedQueries" : true,
+    "supportsQueryRelatedPagination" : true,
+    "supportsQueryWithDistance" : true,
+    "supportsReturningQueryExtent" : true,
+    "supportsStatistics" : true,
+    "supportsOrderBy" : true,
+    "supportsDistinct" : true,
+    "supportsQueryWithResultType" : true,
+    "supportsSqlExpression" : true,
+    "supportsAdvancedQueryRelated" : true,
+    "supportsCountDistinct" : true,
+    "supportsPercentileStatistics" : true,
+    "supportsLod" : true,
+    "supportsQueryWithLodSR" : false,
+    "supportedLodTypes" : [
+      "geohash"
+    ],
+    "supportsReturningGeometryCentroid" : false,
+    "supportsQueryWithDatumTransformation" : true,
+    "supportsHavingClause" : true,
+    "supportsOutFieldSQLExpression" : true,
+    "supportsMaxRecordCountFactor" : true,
+    "supportsTopFeaturesQuery" : true,
+    "supportsQueryWithCacheHint" : true
+  },
+  "useStandardizedQueries" : true,
+  "allowGeometryUpdates" : true,
+  "hasAttachments" : false,
+  "htmlPopupType" : "esriServerHTMLPopupTypeNone",
+  "hasM" : false,
+  "hasZ" : false,
+  "objectIdField" : "ObjectId",
+  "uniqueIdField" :
+  {
+    "name" : "ObjectId",
+    "isSystemMaintained" : true
+  },
+  "globalIdField" : "",
+  "typeIdField" : "",
+  "fields" : [
+    {
+      "name" : "IdBundesland",
+      "type" : "esriFieldTypeInteger",
+      "actualType" : "int",
+      "alias" : "IdBundesland",
+      "sqlType" : "sqlTypeInteger",
+      "nullable" : true,
+      "editable" : true,
+      "domain" : null,
+      "defaultValue" : null
+    },
+    {
+      "name" : "Bundesland",
+      "type" : "esriFieldTypeString",
+      "actualType" : "nvarchar",
+      "alias" : "Bundesland",
+      "sqlType" : "sqlTypeNVarchar",
+      "length" : 2147483647,
+      "nullable" : true,
+      "editable" : true,
+      "domain" : null,
+      "defaultValue" : null
+    },
+    {
+      "name" : "Landkreis",
+      "type" : "esriFieldTypeString",
+      "actualType" : "nvarchar",
+      "alias" : "Landkreis",
+      "sqlType" : "sqlTypeNVarchar",
+      "length" : 2147483647,
+      "nullable" : true,
+      "editable" : true,
+      "domain" : null,
+      "defaultValue" : null
+    },
+    {
+      "name" : "Altersgruppe",
+      "type" : "esriFieldTypeString",
+      "actualType" : "nvarchar",
+      "alias" : "Altersgruppe",
+      "sqlType" : "sqlTypeNVarchar",
+      "length" : 2147483647,
+      "nullable" : true,
+      "editable" : true,
+      "domain" : null,
+      "defaultValue" : null
+    },
+    {
+      "name" : "Geschlecht",
+      "type" : "esriFieldTypeString",
+      "actualType" : "nvarchar",
+      "alias" : "Geschlecht",
+      "sqlType" : "sqlTypeNVarchar",
+      "length" : 2147483647,
+      "nullable" : true,
+      "editable" : true,
+      "domain" : null,
+      "defaultValue" : null
+    },
+    {
+      "name" : "AnzahlFall",
+      "type" : "esriFieldTypeInteger",
+      "actualType" : "int",
+      "alias" : "AnzahlFall",
+      "sqlType" : "sqlTypeInteger",
+      "nullable" : true,
+      "editable" : true,
+      "domain" : null,
+      "defaultValue" : null
+    },
+    {
+      "name" : "AnzahlTodesfall",
+      "type" : "esriFieldTypeInteger",
+      "actualType" : "int",
+      "alias" : "AnzahlTodesfall",
+      "sqlType" : "sqlTypeInteger",
+      "nullable" : true,
+      "editable" : true,
+      "domain" : null,
+      "defaultValue" : null
+    },
+    {
+      "name" : "ObjectId",
+      "type" : "esriFieldTypeOID",
+      "actualType" : "int",
+      "alias" : "ObjectId",
+      "sqlType" : "sqlTypeInteger",
+      "nullable" : false,
+      "editable" : false,
+      "domain" : null,
+      "defaultValue" : null
+    },
+    {
+      "name" : "Meldedatum",
+      "type" : "esriFieldTypeDate",
+      "alias" : "Meldedatum",
+      "sqlType" : "sqlTypeOther",
+      "length" : 0,
+      "nullable" : true,
+      "editable" : true,
+      "domain" : null,
+      "defaultValue" : null
+    },
+    {
+      "name" : "IdLandkreis",
+      "type" : "esriFieldTypeString",
+      "alias" : "Landkreis ID",
+      "sqlType" : "sqlTypeOther",
+      "length" : 256,
+      "nullable" : true,
+      "editable" : true,
+      "domain" : null,
+      "defaultValue" : null
+    },
+    {
+      "name" : "Datenstand",
+      "type" : "esriFieldTypeString",
+      "alias" : "Datenstand",
+      "sqlType" : "sqlTypeOther",
+      "length" : 256,
+      "nullable" : true,
+      "editable" : true,
+      "domain" : null,
+      "defaultValue" : null
+    },
+    {
+      "name" : "NeuerFall",
+      "type" : "esriFieldTypeInteger",
+      "alias" : "Neuer Fall",
+      "sqlType" : "sqlTypeOther",
+      "nullable" : true,
+      "editable" : true,
+      "domain" : null,
+      "defaultValue" : null
+    },
+    {
+      "name" : "NeuerTodesfall",
+      "type" : "esriFieldTypeInteger",
+      "alias" : "Neuer Todesfall",
+      "sqlType" : "sqlTypeOther",
+      "nullable" : true,
+      "editable" : true,
+      "domain" : null,
+      "defaultValue" : null
+    }
+  ],
+  "indexes" : [
+    {
+      "name" : "PK__RKI_COVI__9A6192919383DCDF",
+      "fields" : "ObjectId",
+      "isAscending" : true,
+      "isUnique" : true,
+      "description" : "clustered, unique, primary key"
+    }
+  ],
+  "types" : [],
+  "templates" : [],
+  "supportedQueryFormats" : "JSON, geoJSON, PBF",
+  "hasStaticData" : true,
+  "maxRecordCount" : 2000,
+  "standardMaxRecordCount" : 32000,
+  "tileMaxRecordCount" : 8000,
+  "maxRecordCountFactor" : 1,
+  "capabilities" : "Query,Extract"
+}
+C:\WINDOWS\system32>
+
+
+query?f=json&where=Meldedatum%3Etimestamp%20%272020-03-01%2022%3A59%3A59%27%20AND%20NeuerFall%20IN(0%2C%201)&returnGeometry=false&spatialRel=esriSpatialRelIntersects&outFields=ObjectId%2CAnzahlFall%2CMeldedatum%2CNeuerFall&orderByFields=Meldedatum%20asc&resultOffset=10&resultRecordCount=20&cacheHint=true"
+
+
+curl "https://services7.arcgis.com/mOBPykOjAyBO2ZKk/arcgis/rest/services/RKI_COVID19/FeatureServer/0/query?f=json&where=Meldedatum%3Etimestamp%20%272020-04-01%2022%3A59%3A59%27%20AND%20NeuerFall%20IN(0%2C%201)&returnGeometry=false&spatialRel=esriSpatialRelIntersects&outFields=ObjectId%2CAnzahlFall%2CMeldedatum%2CNeuerFall%2CBundesland&orderByFields=Meldedatum%20asc&resultRecordCount=20&cacheHint=true"
+
+curl "https://services7.arcgis.com/mOBPykOjAyBO2ZKk/arcgis/rest/services/RKI_COVID19/FeatureServer/0/query?f=json&where=Meldedatum%3Etimestamp%20%272020-04-01%2022%3A59%3A59%27%20AND%20NeuerFall%20IN(0%2C%201)&returnGeometry=false&spatialRel=esriSpatialRelIntersects&outFields=ObjectId%2CAnzahlFall%2CMeldedatum%2CNeuerFall%2CAnzahlTodesfall%2CNeuerTodesfall%2CBundesland%2CLandkreis&orderByFields=Meldedatum%20asc&resultRecordCount=20&cacheHint=true"
+
+outFields=ObjectId%2CAnzahlFall%2CMeldedatum%2CNeuerFall%2CAnzahlTodesfall%2CNeuerTodesfall%2CBundesland%2CLandkreis
+
+
+{
+"objectIdFieldName":"ObjectId","uniqueIdField":{
+"name":"ObjectId","isSystemMaintained":true},"globalIdFieldName":"","fields":[{
+"name":"ObjectId","type":"esriFieldTypeOID","alias":"ObjectId","sqlType":"sqlTypeInteger","domain":null,"defaultValue":null},{
+"name":"AnzahlFall","type":"esriFieldTypeInteger","alias":"AnzahlFall","sqlType":"sqlTypeInteger","domain":null,"defaultValue":null},{
+"name":"Meldedatum","type":"esriFieldTypeDate","alias":"Meldedatum","sqlType":"sqlTypeOther","length":0,"domain":null,"defaultValue":null},{
+"name":"NeuerFall","type":"esriFieldTypeInteger","alias":"Neuer Fall","sqlType":"sqlTypeOther","domain":null,"defaultValue":null}],"exceededTransferLimit":true,"features":[{
+"attributes":{
+"ObjectId":810494,"AnzahlFall":1,"Meldedatum":1583107200000,"NeuerFall":0}},{
+"attributes":{
+"ObjectId":811211,"AnzahlFall":1,"Meldedatum":1583107200000,"NeuerFall":0}},{
+"attributes":{
+"ObjectId":813060,"AnzahlFall":1,"Meldedatum":1583107200000,"NeuerFall":0}},{
+"attributes":{
+"ObjectId":813070,"AnzahlFall":1,"Meldedatum":1583107200000,"NeuerFall":0}},{
+"attributes":{
+"ObjectId":814609,"AnzahlFall":1,"Meldedatum":1583107200000,"NeuerFall":0}},{
+"attributes":{
+"ObjectId":815049,"AnzahlFall":1,"Meldedatum":1583107200000,"NeuerFall":0}},{
+"attributes":{
+"ObjectId":816039,"AnzahlFall":1,"Meldedatum":1583107200000,"NeuerFall":0}},{
+"attributes":{
+"ObjectId":816667,"AnzahlFall":1,"Meldedatum":1583107200000,"NeuerFall":0}},{
+"attributes":{
+"ObjectId":816944,"AnzahlFall":1,"Meldedatum":1583107200000,"NeuerFall":0}},{
+"attributes":{
+"ObjectId":817152,"AnzahlFall":1,"Meldedatum":1583107200000,"NeuerFall":0}},{
+"attributes":{
+"ObjectId":817540,"AnzahlFall":1,"Meldedatum":1583107200000,"NeuerFall":0}},{
+"attributes":{
+"ObjectId":817576,"AnzahlFall":1,"Meldedatum":1583107200000,"NeuerFall":0}},{
+"attributes":{
+"ObjectId":817614,"AnzahlFall":5,"Meldedatum":1583107200000,"NeuerFall":0}},{
+"attributes":{
+"ObjectId":817729,"AnzahlFall":1,"Meldedatum":1583107200000,"NeuerFall":0}},{
+"attributes":{
+"ObjectId":818054,"AnzahlFall":1,"Meldedatum":1583107200000,"NeuerFall":0}},{
+"attributes":{
+"ObjectId":818503,"AnzahlFall":1,"Meldedatum":1583107200000,"NeuerFall":0}},{
+"attributes":{
+"ObjectId":821221,"AnzahlFall":3,"Meldedatum":1583107200000,"NeuerFall":0}},{
+"attributes":{
+"ObjectId":821805,"AnzahlFall":1,"Meldedatum":1583107200000,"NeuerFall":0}},{
+"attributes":{
+"ObjectId":826335,"AnzahlFall":1,"Meldedatum":1583107200000,"NeuerFall":0}},{
+"attributes":{
+"ObjectId":826428,"AnzahlFall":1,"Meldedatum":1583107200000,"NeuerFall":0}}]}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
