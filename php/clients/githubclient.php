@@ -2,9 +2,9 @@
 use php\github as hub;
 $loc_class_path="..\classes";
 set_include_path(get_include_path() . PATH_SEPARATOR . $loc_class_path);
-include("phpGithub.php");
-include("phpGithubContent.php");
-include("hubHelper.php");
+require_once("phpGithub.php");
+require_once("phpGithubContent.php");
+require_once("hubHelper.php");
 require_once("phpGithubServiceArray.php");
 
 $client_id="c8ea8d4a38b59ae43915";
